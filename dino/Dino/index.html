@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Denozavr</title>
+</head>
+<body>
+    <section class="block1">
+        <nav>
+            <div class="container">
+                <ul class="menu">
+                    <li class="menu_item"><a href="index.html" class="menu_link">Главная</a></li>
+                    <li class="menu_item"><a href="complet.html" class="menu_link">Работы</a></li>
+                    <li class="menu_item"><a href="#" class="menu_link">Услуги</a></li>
+                    <li class="menu_item"><a href="#" class="menu_link">Клиенты</a></li>
+                    <li class="menu_item"><a href="#" class="menu_link">Контакты</a></li>
+            </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+        </nav>
+            <div class="dino"><a href="#" class="img_link"><img src="icons/dino.ru.png" alt="dino"></a></div>
+            <div class="link"><a href="#">.ru</a></div>
+            <h1 class="title">визуализируем все</h1>
+    </section>
+    <section class="block2">
+        <h2 class="block2_title">Developmen<br>plaza</h2>
+        <div class="block2_subtitle">Совершенно новый подход к архитектурным формам </div>
+    </section>
+    <section class="block3">
+        <div class="block3_title">DOGMA</div>
+        <div class="block3_subtitle">Совершенно новый подход к архитектурным формам</div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <ul class="footer">
+                <li class="footer_item"><a href="#" class="footer_link">Архитектура</a></li>
+                <li class="footer_item"><a href="#" class="footer_link">Анимация </a></li>
+                <li class="footer_item"><a href="#" class="footer_link">Виртуальные туры и VR</a></li>
+                <li class="footer_item"><a href="#" class="footer_link">Идеи</a></li>
+                <li class="footer_item"><a href="#" class="footer_link">Ой, все</a></li>
+            </ul>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery.backgroundvideo.min.js"></script>
+    <script>
+        $(document).ready(function() {
+          var videobackground = new $.backgroundVideo($('body'), {
+            "align": "centerXY",
+            "width": 1280,
+            "height": 720,
+            "path": "video/",
+            "filename": "cloud",
+            "types": ["mp4","ogg","webm"],
+            "preload": true,
+            "autoplay": true,
+            "loop": true
+          });
+        });
+    </script>
+</body>
+</html>

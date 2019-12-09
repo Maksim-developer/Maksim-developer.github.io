@@ -1,0 +1,325 @@
+.block1
+	position: relative
+	height: 1079px
+	.dino
+		display: inline-block
+		padding: 48px 0 0 75px
+	.link
+		position: absolute
+		top: 60px
+		left: 130px
+		a
+			text-decoration: none
+			color: #ffffff
+			font-family: "PF Din Text Comp Pro"
+			font-size: 35px
+			font-weight: 400
+			text-transform: uppercase
+			letter-spacing: 2.21px
+	.title
+        text-align: center
+        margin-top: 479px
+        color: #ffffff
+        font-family: "PF Din Text Comp Pro"
+        font-size: 48px
+        font-weight: 400
+        line-height: 40.38px
+        text-transform: uppercase
+        // Text style for "визуализир"
+        letter-spacing: 4.3px
+	.menu
+		position: absolute
+		text-align: center
+		z-index: 1
+		width: 100%
+		height: 500px
+		margin: 0 auto
+		padding: 0
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		top: 4.9%
+		left: 0%
+		transition: 1s all
+		list-style: none
+		opacity: 0
+		&_active 
+			position: absolute
+			width: 100%
+			height: 100%
+			z-index: 0
+			margin: 0 auto
+			padding: 13%
+			opacity: 1
+			list-style: none
+			background-color: rgba(0, 0, 0, 0.5)
+			left: 0%
+			top: 0%
+			transition: 3s all
+			.title
+				display: none
+		&_item
+			margin: 42px 0
+			height: 66px
+			border: none
+		&_link 
+			text-align: center
+			color: #ffffff
+			font-family: "PF Din Text Comp Pro"
+			font-size: 34px
+			font-weight: 400
+			line-height: 65px
+			text-transform: uppercase
+			// Text style for "главная ,"
+			letter-spacing: 2.3px
+			text-decoration: none
+			&:hover
+				background: url('../icons/hover.png') center (center / cover) no-repeat
+	.hamburger
+		position: fixed
+		z-index: 100
+		display: block
+		right: 4%
+		top: 8%
+		transform: translateY(-50%)
+		width: 33px
+		height: 20px
+		cursor: pointer
+		span 
+			display: block 
+			height: 2px
+			width: 100%
+			background-color: #bff836
+			margin-bottom: 7px
+			transition: 0.5s all
+		&_active 
+			span 
+				margin-bottom: -2px 
+				&:nth-child(1)
+					transform: translateY(3px) rotate(-45deg)
+				&:nth-child(2)
+					display: none
+				&:nth-child(3)
+					transform: translateY(3px) rotate(45deg)
+.block2
+	position: relative
+	height: 1198px
+	background: url('../img/Fon2.jpg') center (center / cover) no-repeat
+	&_title
+		position: absolute
+		bottom: 174px
+		left: 156px
+		color: #ffffff
+		font-family: "PF Din Text Comp Pro"
+		font-size: 114px
+		font-weight: 400
+		line-height: 96.76px
+		text-transform: uppercase
+		// Text style for "Developmen"
+		letter-spacing: 0.3px
+	&_subtitle
+		position: absolute
+		bottom: 141px
+		left: 160px
+		color: #ffffff
+		font-family: "PF Din Text Cond Pro X"
+		font-size: 19px
+		font-weight: 600
+		line-height: 16.42px
+		// Text style for "Совершенно"
+		letter-spacing: 0.3px
+.block3
+	position: relative
+	height: 1216px
+	background: url('../img/Fon3.jpg') center (center / cover) no-repeat
+	&_title
+		position: absolute
+		bottom: 165px
+		left: 156px
+		color: #ffffff
+		font-family: "PF Din Text Comp Pro"
+		font-size: 114px
+		font-weight: 400
+		line-height: 96.76px
+		text-transform: uppercase
+		// Text style for "DOGMA"
+		letter-spacing: 0.3px
+	&_subtitle
+		position: absolute
+		bottom: 123px
+		left: 160px
+		color: #ffffff
+		font-family: "PF Din Text Cond Pro X"
+		font-size: 19px
+		font-weight: 600
+		line-height: 16.42px
+		// Text style for "Совершенно"
+		letter-spacing: 0.3px
+footer
+	height: 90px
+	background-color: #121212
+	.footer
+		list-style: none
+		display: flex
+		justify-content: center
+		padding-top: 30px
+		&_item
+			padding-right: 55px
+		&_link
+			text-decoration: none
+			list-style: none
+			color: #737373
+			font-family: "PF Din Text Cond Pro"
+			font-size: 15px
+			font-weight: 300
+			line-height: 26.74px
+			// Text style for "Архитектур"
+			letter-spacing: 0.26px
+.complet
+	position: relative
+	width: 100%
+	max-height: 4624px
+	background-color: #121212
+	&_dino
+		display: inline-block
+		padding: 46px 0 0 64px
+	&_link
+		position: absolute
+		top: 58px
+		left: 116px
+		a
+			text-decoration: none
+			color: #ffffff
+			font-family: "PF Din Text Comp Pro"
+			font-size: 35px
+			font-weight: 400
+			text-transform: uppercase
+			letter-spacing: 2.21px
+	.menu
+		position: absolute
+		text-align: center
+		z-index: 1
+		width: 100%
+		height: 500px
+		margin: 0 auto
+		padding: 0
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		top: 4.9%
+		left: 0%
+		transition: 1s all
+		list-style: none
+		opacity: 0
+		&_active 
+			position: absolute
+			width: 100%
+			height: 100%
+			z-index: 0
+			margin: 0 auto
+			padding: 13%
+			opacity: 1
+			list-style: none
+			background-color: rgba(0, 0, 0, 0.5)
+			left: 0%
+			top: 0%
+			transition: 3s all
+			.title
+				display: none
+		&_item
+			margin: 42px 0
+			height: 66px
+			border: none
+		&_link 
+			text-align: center
+			color: #ffffff
+			font-family: "PF Din Text Comp Pro"
+			font-size: 34px
+			font-weight: 400
+			line-height: 65px
+			text-transform: uppercase
+			// Text style for "главная ,"
+			letter-spacing: 2.3px
+			text-decoration: none
+			&:hover
+				background: url('../icons/hover.png') center (center / cover) no-repeat
+	.hamburger
+		position: absolute
+		z-index: 100
+		display: block
+		right: 6%
+		top: 2%
+		transform: translateY(-50%)
+		width: 33px
+		height: 20px
+		cursor: pointer
+		span 
+			display: block 
+			height: 2px
+			width: 100%
+			background-color: #ffffff
+			margin-bottom: 7px
+			transition: 0.5s all
+		&_active 
+			span 
+				margin-bottom: -2px 
+				&:nth-child(1)
+					transform: translateY(3px) rotate(-45deg)
+				&:nth-child(2)
+					display: none
+				&:nth-child(3)
+					transform: translateY(3px) rotate(45deg)
+	.back
+		position: absolute
+		width: 50px
+		height: 50px
+		z-index: 3
+		top: 5%
+		left: 14%
+	&_descr
+		margin: 175px 0 0 267px
+	.title
+		color: #bff836
+		font-family: "PF Din Text Cond Pro"
+		font-size: 35px
+		font-weight: 300
+		line-height: 58.32px
+		/* Text style for "Задача" */
+		letter-spacing: 0.3px
+	.subtitle
+		color: #ffffff
+		font-family: "PF Din Text Cond Pro X"
+		font-size: 19px
+		font-weight: 400
+		line-height: 22.03px
+		// Text style for "Для старта"
+		letter-spacing: 0.31px
+		opacity: 0.7
+	&_descr2
+		margin: 75px 0 0 267px
+	.slide
+		margin-top: 200px
+	.content_img
+		position: relative
+		width: 100%
+		margin-left: 500px
+		margin-bottom: 9px
+		&:hover
+			.ci_hover
+				opacity: 1
+		img
+			width: auto
+			top: 10%
+	.ci_hover
+		width: 100%
+		height: 100%
+		background: rgba(18,18,18,0.8) url("../icons/search.png") no-repeat center center
+		position: absolute
+		top: 0
+		left: -25%
+		opacity: 0
+		transition: 1s
+	.content_slider
+		margin: 190px 0 0 40px
+		height: auto
+		
