@@ -290,6 +290,8 @@
   z-index: 1;
   border: none;
   background-color: rgba(250, 248, 252, 0);
+  outline: none;
+  max-width: 98px;
 }
 
 .specialization .carousel_inner .slick-prev:hover {
@@ -311,6 +313,8 @@
   z-index: 1;
   border: none;
   background-color: rgba(250, 248, 252, 0);
+  outline: none;
+  max-width: 98px;
 }
 
 .specialization .carousel_inner .slick-next:hover {
