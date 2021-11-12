@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Petroleum</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <main class="main">
+            <section class="main-page page">
+                <div class="main-page__fone">
+                    <div class="main-page__left-mask">
+                        <div class="main-page__line"></div>
+                    </div>
+                    <div class="main-page__right-mask"></div>
+                </div>
+
+                <header class="header">
+                    <div class="header__nav">
+                        <div class="header__nav-wrapper"></div>
+                        <div class="header__nav-box" data-da=".header__nav-wrapper,950,3"></div>
+                    </div>
+                    <div class="header__container">
+                        <div class="header__phone">
+                            <a href="tel:+79661677878">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M21.9999 16.92V19.92C22.0011 20.1985 21.944 20.4742 21.8324 20.7294C21.7209 20.9845 21.5572 21.2136 21.352 21.4019C21.1468 21.5901 20.9045 21.7335 20.6407 21.8227C20.3769 21.9119 20.0973 21.9451 19.8199 21.92C16.7428 21.5856 13.7869 20.5342 11.1899 18.85C8.77376 17.3147 6.72527 15.2662 5.18993 12.85C3.49991 10.2412 2.44818 7.271 2.11993 4.18001C2.09494 3.90347 2.12781 3.62477 2.21643 3.36163C2.30506 3.09849 2.4475 2.85669 2.6347 2.65163C2.82189 2.44656 3.04974 2.28271 3.30372 2.17053C3.55771 2.05834 3.83227 2.00027 4.10993 2.00001H7.10993C7.59524 1.99523 8.06572 2.16708 8.43369 2.48354C8.80166 2.79999 9.04201 3.23945 9.10993 3.72001C9.23656 4.68007 9.47138 5.62273 9.80993 6.53001C9.94448 6.88793 9.9736 7.27692 9.89384 7.65089C9.81408 8.02485 9.6288 8.36812 9.35993 8.64001L8.08993 9.91001C9.51349 12.4136 11.5864 14.4865 14.0899 15.91L15.3599 14.64C15.6318 14.3711 15.9751 14.1859 16.3491 14.1061C16.723 14.0263 17.112 14.0555 17.4699 14.19C18.3772 14.5286 19.3199 14.7634 20.2799 14.89C20.7657 14.9585 21.2093 15.2032 21.5265 15.5775C21.8436 15.9518 22.0121 16.4296 21.9999 16.92Z"
+                                        stroke="#25282B" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="header-logo">
+                            <a href="#"><img src="img/logo.png" alt="logo"></a>
+                        </div>
+                        <div class="header__body" data-da=".header__nav-wrapper,700,0">
+                            <div class="header-top" data-da=".header__nav-wrapper,1150,0">
+                                <ul class="header-top__clients clients-menu">
+                                    <li class="clients-menu__item">
+                                        <p class="clients-menu__links">Топливные
+                                            карты
+                                        </p>
+                                    </li>
+                                    <li class="clients-menu__item">
+                                        <a href="#" class="clients-menu__links">Для
+                                            компаний
+                                        </a>
+                                    </li>
+                                    <li class="clients-menu__item">
+                                        <a href="#" class="clients-menu__links">Для частных
+                                            лиц
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="header-top__sozial sozial">
+                                    <a href="#" class="sozial__links watssap">
+                                        <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="13.2051" cy="13.2051" r="13.2051" fill="#000001" />
+                                            <path
+                                                d="M18.4388 7.96436C17.1344 6.66448 15.3952 5.94232 13.5594 5.94232C9.74278 5.94232 6.65085 9.02352 6.65085 12.8269C6.65085 14.0305 6.98903 15.2341 7.56877 16.2451L6.60254 19.8077L10.2742 18.8448C11.2888 19.3744 12.3999 19.6633 13.5594 19.6633C17.376 19.6633 20.4679 16.5821 20.4679 12.7787C20.4196 10.9974 19.7432 9.26424 18.4388 7.96436ZM16.8929 15.2822C16.7479 15.6673 16.0716 16.0525 15.7334 16.1006C15.4435 16.1488 15.057 16.1488 14.6706 16.0525C14.429 15.9562 14.0908 15.8599 13.7043 15.6673C11.9651 14.9452 10.8539 13.212 10.7573 13.0676C10.6607 12.9713 10.0327 12.1529 10.0327 11.2863C10.0327 10.4197 10.4675 10.0345 10.6124 9.84196C10.7573 9.64939 10.9506 9.64939 11.0955 9.64939C11.1921 9.64939 11.3371 9.64939 11.4337 9.64939C11.5303 9.64939 11.6752 9.60124 11.8202 9.93825C11.9651 10.2753 12.3033 11.1418 12.3516 11.19C12.3999 11.2863 12.3999 11.3826 12.3516 11.4788C12.3033 11.5751 12.255 11.6714 12.1584 11.7677C12.0617 11.864 11.9651 12.0084 11.9168 12.0566C11.8202 12.1529 11.7236 12.2491 11.8202 12.3936C11.9168 12.5862 12.255 13.1157 12.7864 13.5972C13.4628 14.1749 13.9942 14.3675 14.1874 14.4638C14.3807 14.56 14.4773 14.5119 14.5739 14.4156C14.6705 14.3193 15.0087 13.9342 15.1054 13.7416C15.202 13.549 15.3469 13.5972 15.4918 13.6453C15.6368 13.6935 16.5064 14.1268 16.6513 14.223C16.8446 14.3193 16.9412 14.3675 16.9895 14.4156C17.0378 14.56 17.0378 14.897 16.8929 15.2822Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="sozial__links telegramm">
+                                        <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="13.5001" cy="13.2051" r="13.2051" fill="#000001" />
+                                            <path
+                                                d="M6.46886 13.4521L9.50478 14.5841L10.6883 18.3919C10.7397 18.6492 11.0485 18.7006 11.2543 18.5463L12.9523 17.1569C13.1067 17.0026 13.364 17.0026 13.5698 17.1569L16.6057 19.3696C16.8115 19.5239 17.1203 19.421 17.1717 19.1637L19.4358 8.35795C19.4873 8.10067 19.23 7.84339 18.9727 7.9463L6.46886 12.7832C6.16012 12.8861 6.16012 13.3492 6.46886 13.4521ZM10.5339 14.0181L16.5028 10.3647C16.6057 10.3133 16.7086 10.4677 16.6057 10.5191L11.7174 15.0987C11.563 15.2531 11.4086 15.4589 11.4086 15.7162L11.2543 16.9511C11.2543 17.1055 10.997 17.1569 10.9455 16.9511L10.3281 14.6871C10.1737 14.4298 10.2766 14.121 10.5339 14.0181Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="sozial__links viber">
+                                        <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="13.795" cy="13.2051" r="13.2051" fill="#000001" />
+                                            <path
+                                                d="M17.9241 6.96301C15.4076 6.48242 12.7942 6.48242 10.2776 6.96301C9.16451 7.20331 7.76103 8.54896 7.51905 9.60626C7.08349 11.6728 7.08349 13.7874 7.51905 15.8539C7.80943 16.9112 9.2129 18.2569 10.2776 18.4972C10.326 18.4972 10.3744 18.5452 10.3744 18.5933V21.621C10.3744 21.7652 10.568 21.8613 10.6648 21.7171L12.1167 20.2273C12.1167 20.2273 13.2781 19.0258 13.4717 18.8336C13.4717 18.8336 13.5201 18.7855 13.5685 18.7855C15.0204 18.8336 16.5207 18.6894 17.9725 18.4491C19.0856 18.2088 20.4891 16.8632 20.7311 15.8059C21.1667 13.7393 21.1667 11.6247 20.7311 9.5582C20.4407 8.54896 19.0372 7.20331 17.9241 6.96301ZM17.9725 15.9981C17.7306 16.4787 17.4402 16.8632 16.9562 17.1035C16.811 17.1515 16.6659 17.1996 16.5207 17.2477C16.3271 17.1996 16.1819 17.1515 16.0367 17.1035C14.488 16.4787 13.0362 15.6136 11.8747 14.3641C11.2455 13.6432 10.7132 12.8262 10.2776 11.9612C10.084 11.5286 9.89045 11.1442 9.74526 10.7116C9.60007 10.3271 9.84205 9.94268 10.084 9.65432C10.326 9.36597 10.6164 9.17373 10.9552 9.02955C11.1971 8.88538 11.4391 8.98149 11.6327 9.17373C12.0199 9.65432 12.407 10.1349 12.6974 10.6636C12.891 11 12.8426 11.3844 12.5038 11.6247C12.407 11.6728 12.3586 11.7209 12.2618 11.817C12.2134 11.865 12.1166 11.9131 12.0683 12.0092C11.9715 12.1534 11.9715 12.2976 12.0199 12.4417C12.407 13.5471 13.133 14.4122 14.2461 14.8928C14.4396 14.9889 14.5848 15.0369 14.8268 15.0369C15.1656 14.9889 15.3108 14.6044 15.5528 14.4122C15.7947 14.2199 16.0851 14.2199 16.3755 14.3641C16.6175 14.5083 16.8594 14.7005 17.1498 14.8928C17.3918 15.085 17.6338 15.2292 17.8757 15.4214C18.0209 15.5175 18.0693 15.7578 17.9725 15.9981ZM15.9399 12.3937C15.8431 12.3937 15.8915 12.3937 15.9399 12.3937C15.7463 12.3937 15.6979 12.2976 15.6495 12.1534C15.6495 12.0573 15.6495 11.9131 15.6011 11.817C15.5527 11.6247 15.456 11.4325 15.2624 11.2883C15.1656 11.2403 15.0688 11.1922 14.972 11.1442C14.8268 11.0961 14.73 11.0961 14.5848 11.0961C14.4396 11.048 14.3913 10.9519 14.3913 10.8077C14.3913 10.7116 14.5364 10.6155 14.6332 10.6155C15.4076 10.6636 15.9883 11.0961 16.0851 12.0092C16.0851 12.0573 16.0851 12.1534 16.0851 12.2015C16.0851 12.2976 16.0367 12.3937 15.9399 12.3937ZM15.456 10.2791C15.214 10.183 14.972 10.0869 14.6816 10.0388C14.5848 10.0388 14.4396 9.99073 14.3429 9.99073C14.1977 9.99073 14.1009 9.89462 14.1493 9.75044C14.1493 9.60626 14.2461 9.51014 14.3913 9.5582C14.8752 9.60626 15.3108 9.70238 15.7463 9.89462C16.6175 10.3271 17.1014 11.048 17.2466 12.0092C17.2466 12.0573 17.2466 12.1053 17.2466 12.1534C17.2466 12.2495 17.2466 12.3456 17.2466 12.4898C17.2466 12.5379 17.2466 12.5859 17.2466 12.634C17.1982 12.8262 16.8594 12.8743 16.811 12.634C16.811 12.5859 16.7626 12.4898 16.7626 12.4417C16.7626 12.0092 16.6659 11.5767 16.4723 11.1922C16.1819 10.7597 15.8431 10.4713 15.456 10.2791ZM18.0693 13.1626C17.9241 13.1626 17.8274 13.0185 17.8274 12.8743C17.8274 12.5859 17.779 12.2976 17.7306 12.0092C17.537 10.4713 16.2787 9.22179 14.7784 8.98149C14.5364 8.93343 14.2945 8.93343 14.1009 8.88538C13.9557 8.88538 13.7621 8.88538 13.7137 8.69314C13.6653 8.54896 13.8105 8.40478 13.9557 8.40478C14.0041 8.40478 14.0525 8.40478 14.0525 8.40478C16.0367 8.45284 14.1493 8.40478 14.0525 8.40478C16.0851 8.45284 17.779 9.7985 18.1177 11.817C18.1661 12.1534 18.2145 12.4898 18.2145 12.8743C18.3113 13.0185 18.2145 13.1626 18.0693 13.1626Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <ul class="header-top__menu menu-top">
+                                    <li class="menu-top__item"><a href="#" class="menu-top__link">География поставок</a>
+                                    </li>
+                                    <li class="menu-top__item"><a href="#" class="menu-top__link">Система качества</a>
+                                    </li>
+                                    <li class="menu-top__item"><a href="#" class="menu-top__link">Отзывы</a></li>
+                                    <li class="menu-top__item"><a href="#" class="menu-top__link">О компании</a></li>
+                                    <li class="menu-top__item"><a href="#" class="menu-top__link">Контакты</a></li>
+                                </ul>
+                            </div>
+                            <div class="header-bottom">
+                                <div class="header-bottom-nav" data-da=".header__nav-wrapper,1150,1">
+
+                                    <ul class="header-bottom__menu">
+                                        <li class="header-bottom__item drops">
+                                            <a href="#" class="header-bottom__links drops__link">Топливо оптом</a>
+                                            <svg width="7" height="7" viewBox="0 0 7 7" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.75 2.625L3.5 4.375L5.25 2.625" stroke="white"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <ul class="drops__menu">
+                                                <li class="drops__item"><a href="" class="drops__list">Бензин
+                                                        автомобильный</a></li>
+                                                <li class="drops__item"><a href="" class="drops__list">Дизельное
+                                                        топливо</a>
+                                                </li>
+                                                <li class="drops__item"><a href="" class="drops__list">Керосин</a></li>
+                                                <li class="drops__item"><a href="" class="drops__list">Мазут</a></li>
+                                                <li class="drops__item"><a href="" class="drops__list">Битум
+                                                        строительный</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="header-bottom__item"><a href="#" class="header-bottom__links">Условия
+                                                обслуживания</a>
+                                        </li>
+                                        <li class="header-bottom__item"><a href="#" class="header-bottom__links">Примеры
+                                                внедрений</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <div class="header-bottom__box">
+                                    <div class="header-bottom__contacts contacts">
+                                        <div class="contacts__phone">
+                                            <a href="tel:+79661677878">+7 (966) 167-78-78</a>
+                                            <div class="header-top__sozial sozial">
+                                                <a href="#" class="sozial__links watssap">
+                                                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <circle cx="13.2051" cy="13.2051" r="13.2051" fill="#000001" />
+                                                        <path
+                                                            d="M18.4388 7.96436C17.1344 6.66448 15.3952 5.94232 13.5594 5.94232C9.74278 5.94232 6.65085 9.02352 6.65085 12.8269C6.65085 14.0305 6.98903 15.2341 7.56877 16.2451L6.60254 19.8077L10.2742 18.8448C11.2888 19.3744 12.3999 19.6633 13.5594 19.6633C17.376 19.6633 20.4679 16.5821 20.4679 12.7787C20.4196 10.9974 19.7432 9.26424 18.4388 7.96436ZM16.8929 15.2822C16.7479 15.6673 16.0716 16.0525 15.7334 16.1006C15.4435 16.1488 15.057 16.1488 14.6706 16.0525C14.429 15.9562 14.0908 15.8599 13.7043 15.6673C11.9651 14.9452 10.8539 13.212 10.7573 13.0676C10.6607 12.9713 10.0327 12.1529 10.0327 11.2863C10.0327 10.4197 10.4675 10.0345 10.6124 9.84196C10.7573 9.64939 10.9506 9.64939 11.0955 9.64939C11.1921 9.64939 11.3371 9.64939 11.4337 9.64939C11.5303 9.64939 11.6752 9.60124 11.8202 9.93825C11.9651 10.2753 12.3033 11.1418 12.3516 11.19C12.3999 11.2863 12.3999 11.3826 12.3516 11.4788C12.3033 11.5751 12.255 11.6714 12.1584 11.7677C12.0617 11.864 11.9651 12.0084 11.9168 12.0566C11.8202 12.1529 11.7236 12.2491 11.8202 12.3936C11.9168 12.5862 12.255 13.1157 12.7864 13.5972C13.4628 14.1749 13.9942 14.3675 14.1874 14.4638C14.3807 14.56 14.4773 14.5119 14.5739 14.4156C14.6705 14.3193 15.0087 13.9342 15.1054 13.7416C15.202 13.549 15.3469 13.5972 15.4918 13.6453C15.6368 13.6935 16.5064 14.1268 16.6513 14.223C16.8446 14.3193 16.9412 14.3675 16.9895 14.4156C17.0378 14.56 17.0378 14.897 16.8929 15.2822Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                </a>
+                                                <a href="#" class="sozial__links telegramm">
+                                                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <circle cx="13.5001" cy="13.2051" r="13.2051" fill="#000001" />
+                                                        <path
+                                                            d="M6.46886 13.4521L9.50478 14.5841L10.6883 18.3919C10.7397 18.6492 11.0485 18.7006 11.2543 18.5463L12.9523 17.1569C13.1067 17.0026 13.364 17.0026 13.5698 17.1569L16.6057 19.3696C16.8115 19.5239 17.1203 19.421 17.1717 19.1637L19.4358 8.35795C19.4873 8.10067 19.23 7.84339 18.9727 7.9463L6.46886 12.7832C6.16012 12.8861 6.16012 13.3492 6.46886 13.4521ZM10.5339 14.0181L16.5028 10.3647C16.6057 10.3133 16.7086 10.4677 16.6057 10.5191L11.7174 15.0987C11.563 15.2531 11.4086 15.4589 11.4086 15.7162L11.2543 16.9511C11.2543 17.1055 10.997 17.1569 10.9455 16.9511L10.3281 14.6871C10.1737 14.4298 10.2766 14.121 10.5339 14.0181Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                </a>
+                                                <a href="#" class="sozial__links viber">
+                                                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <circle cx="13.795" cy="13.2051" r="13.2051" fill="#000001" />
+                                                        <path
+                                                            d="M17.9241 6.96301C15.4076 6.48242 12.7942 6.48242 10.2776 6.96301C9.16451 7.20331 7.76103 8.54896 7.51905 9.60626C7.08349 11.6728 7.08349 13.7874 7.51905 15.8539C7.80943 16.9112 9.2129 18.2569 10.2776 18.4972C10.326 18.4972 10.3744 18.5452 10.3744 18.5933V21.621C10.3744 21.7652 10.568 21.8613 10.6648 21.7171L12.1167 20.2273C12.1167 20.2273 13.2781 19.0258 13.4717 18.8336C13.4717 18.8336 13.5201 18.7855 13.5685 18.7855C15.0204 18.8336 16.5207 18.6894 17.9725 18.4491C19.0856 18.2088 20.4891 16.8632 20.7311 15.8059C21.1667 13.7393 21.1667 11.6247 20.7311 9.5582C20.4407 8.54896 19.0372 7.20331 17.9241 6.96301ZM17.9725 15.9981C17.7306 16.4787 17.4402 16.8632 16.9562 17.1035C16.811 17.1515 16.6659 17.1996 16.5207 17.2477C16.3271 17.1996 16.1819 17.1515 16.0367 17.1035C14.488 16.4787 13.0362 15.6136 11.8747 14.3641C11.2455 13.6432 10.7132 12.8262 10.2776 11.9612C10.084 11.5286 9.89045 11.1442 9.74526 10.7116C9.60007 10.3271 9.84205 9.94268 10.084 9.65432C10.326 9.36597 10.6164 9.17373 10.9552 9.02955C11.1971 8.88538 11.4391 8.98149 11.6327 9.17373C12.0199 9.65432 12.407 10.1349 12.6974 10.6636C12.891 11 12.8426 11.3844 12.5038 11.6247C12.407 11.6728 12.3586 11.7209 12.2618 11.817C12.2134 11.865 12.1166 11.9131 12.0683 12.0092C11.9715 12.1534 11.9715 12.2976 12.0199 12.4417C12.407 13.5471 13.133 14.4122 14.2461 14.8928C14.4396 14.9889 14.5848 15.0369 14.8268 15.0369C15.1656 14.9889 15.3108 14.6044 15.5528 14.4122C15.7947 14.2199 16.0851 14.2199 16.3755 14.3641C16.6175 14.5083 16.8594 14.7005 17.1498 14.8928C17.3918 15.085 17.6338 15.2292 17.8757 15.4214C18.0209 15.5175 18.0693 15.7578 17.9725 15.9981ZM15.9399 12.3937C15.8431 12.3937 15.8915 12.3937 15.9399 12.3937C15.7463 12.3937 15.6979 12.2976 15.6495 12.1534C15.6495 12.0573 15.6495 11.9131 15.6011 11.817C15.5527 11.6247 15.456 11.4325 15.2624 11.2883C15.1656 11.2403 15.0688 11.1922 14.972 11.1442C14.8268 11.0961 14.73 11.0961 14.5848 11.0961C14.4396 11.048 14.3913 10.9519 14.3913 10.8077C14.3913 10.7116 14.5364 10.6155 14.6332 10.6155C15.4076 10.6636 15.9883 11.0961 16.0851 12.0092C16.0851 12.0573 16.0851 12.1534 16.0851 12.2015C16.0851 12.2976 16.0367 12.3937 15.9399 12.3937ZM15.456 10.2791C15.214 10.183 14.972 10.0869 14.6816 10.0388C14.5848 10.0388 14.4396 9.99073 14.3429 9.99073C14.1977 9.99073 14.1009 9.89462 14.1493 9.75044C14.1493 9.60626 14.2461 9.51014 14.3913 9.5582C14.8752 9.60626 15.3108 9.70238 15.7463 9.89462C16.6175 10.3271 17.1014 11.048 17.2466 12.0092C17.2466 12.0573 17.2466 12.1053 17.2466 12.1534C17.2466 12.2495 17.2466 12.3456 17.2466 12.4898C17.2466 12.5379 17.2466 12.5859 17.2466 12.634C17.1982 12.8262 16.8594 12.8743 16.811 12.634C16.811 12.5859 16.7626 12.4898 16.7626 12.4417C16.7626 12.0092 16.6659 11.5767 16.4723 11.1922C16.1819 10.7597 15.8431 10.4713 15.456 10.2791ZM18.0693 13.1626C17.9241 13.1626 17.8274 13.0185 17.8274 12.8743C17.8274 12.5859 17.779 12.2976 17.7306 12.0092C17.537 10.4713 16.2787 9.22179 14.7784 8.98149C14.5364 8.93343 14.2945 8.93343 14.1009 8.88538C13.9557 8.88538 13.7621 8.88538 13.7137 8.69314C13.6653 8.54896 13.8105 8.40478 13.9557 8.40478C14.0041 8.40478 14.0525 8.40478 14.0525 8.40478C16.0367 8.45284 14.1493 8.40478 14.0525 8.40478C16.0851 8.45284 17.779 9.7985 18.1177 11.817C18.1661 12.1534 18.2145 12.4898 18.2145 12.8743C18.3113 13.0185 18.2145 13.1626 18.0693 13.1626Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="contacts__mail">
+                                            <a href="mailto:info@vsk-oil.com">info@vsk-oil.com</a>
+                                            <p>c 9 до 19, по будням</p>
+                                        </div>
+                                    </div>
+                                    <div class="header-bottom__button modal-btn btn" data-da=".header__nav-box,950,0"
+                                        data-path="call-back" data-animation="fadeIn" data-speed="1000">
+                                        <p>Обратный звонок</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </header>
+            </section>
+
+            <section class="cards-company about-company__cards">
+                <div class="crumbs">
+                    <div class="crumbs__container container">
+                        <ul class="crumbs__list">
+                            <li class="crumbs__item">
+                                <a class="crumbs__link" href="#">Главная</a>
+                            </li>
+                            <li class="crumbs__item">
+                                <a class="crumbs__link" href="#">О комании</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cards-company__container container">
+                    <div class="cards-company__body">
+                        <h1 class="cards-company__title">О комании</h1>
+                        <div class="cards-company__text">
+                            <p>
+                                Цель &laquo;ВСК-ОЙЛ&raquo; удовлетворение спроса на&nbsp;рынке поставок нефтепродуктов и&nbsp;оказания транспортных услуг. У&nbsp;нас есть все слагаемые для успешной работы: прямые договора с&nbsp;производителями, финансовые ресурсы, профессиональный коллектив, собственный автопарк бензовозов.
+                            </p>
+                            <p>Благодаря индивидуальному подходу к&nbsp;каждому заказу цены на&nbsp;топливо и&nbsp;услуги доставки всегда конкурентоспособны. Вы&nbsp;сможете сами выбрать условия поставки, а, соответственно, получить приемлемую для вас стоимость, которая может отличаться от&nbsp;нашего прайса в&nbsp;лучшую для вас сторону.
+                            </p>
+                        </div>
+                        <div class="about-company__images">
+                            <img src="img/about-company/about-bg.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main-about">
+                <div class="main-about__about about">
+                    <div class="about__shell"></div>
+                    <div class="about__wrapper">
+                        <div class="about__container container">
+                            <div class="about__body">
+                                <div class="about__box">
+                                    <h2 data-da=".about__shell,550,0" class="about__title title">Наши показатели по
+                                        итогам прошлого года</h2>
+                                    <div class="about__card-top">
+                                        <div class="about__fuel">
+                                            <div class="about__name">
+                                                Дизель
+                                            </div>
+                                            <div class="about__quantity">
+                                                500 000+
+                                            </div>
+                                            <p>тонн</p>
+                                        </div>
+                                        <div class="about__fuel">
+                                            <div class="about__name">
+                                                Бензин
+                                            </div>
+                                            <div class="about__quantity">
+                                                300 000+
+                                            </div>
+                                            <p>тонн</p>
+                                        </div>
+                                        <p class="about__mobile">поставлено наливом нашим клиентам</p>
+                                        <div class="about__card-mask"></div>
+                                    </div>
+                                </div>
+                                <div class="about__row">
+                                    <div class="about__card about__card-clients">
+                                        <div class="about__quantity">
+                                            39
+                                        </div>
+                                        <p>новых клиентов</p>
+                                        <div class="about__descr">
+                                            это действительно много в нашей сфере
+                                        </div>
+                                    </div>
+                                    <div class="about__card about__card-mountin">
+                                        <div class="about__quantity">
+                                            900 000
+                                        </div>
+                                        <p>литров в месяц</p>
+                                        <div class="about__descr">
+                                            наливается топлива по нашим картам
+                                        </div>
+                                    </div>
+                                    <div class="about__card about__card-price">
+                                        <div class="about__quantity">
+                                            90 000 000
+                                        </div>
+                                        <p>рублей</p>
+                                        <div class="about__descr">
+                                            оборот по картам наших клиентов
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-quality">
+                    <div class="about-quality__body">
+                        <div class="about-quality__image">
+                            <img src="img/about-company/img.png" alt="">
+                        </div>
+                        <div class="about-quality__info slide-geography__body">
+                            <div class="slide-geography__text">
+                                    <div class="slide-geography__title title">
+                                        Мы за качество!
+                                    </div>
+                                    <div class="slide-geography__descr">
+                                        Качество и надёжность, вот важнейшие показатели нашей работы. Поэтому,
+                                        мы делаем
+                                        все возможное, что бы наш клиент получил лучший сервис на рынке топлива.
+                                        Как резултат, постоянный рост нашей клиентской базы и объёмов поставок.
+                                    </div>
+                                    <div class="slide-geography__name">
+                                        Александр Александров
+                                    </div>
+                                    <p class="slide-geography__post">
+                                        Генеральный директор "ВСК-ОЙЛ"
+                                    </p>
+                                    <div class="slide-geography__images">
+                                        <img src="img/about-company/alecksandrow.png" alt="">
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <section class="main-option-clients option-clients">
+                <div class="option-clients__container container">
+                    <div class="option-clients__examples examples-cliens">
+
+                        <div class="examples-cliens__header">
+                            <h3 class="examples-cliens__title title">Мнение наших клиентов</h3>
+                            <div class="option-clients__nav nav-slider">
+                                <div class="nav-slider-arrow nav-slider-prev option-clients__arrow-prev">
+                                    <svg width="26" height="6" viewBox="0 0 26 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 3L5 5.88675V0.113249L0 3ZM4.5 3.5H26V2.5H4.5V3.5Z" fill="black" />
+                                    </svg>
+                                </div>
+                                <div class="nav-slider-arrow nav-slider-next option-clients__arrow-next">
+                                    <svg width="26" height="6" viewBox="0 0 26 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M26 3L21 0.113249V5.88675L26 3ZM0 3.5H21.5V2.5H0V3.5Z" fill="black" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="examples-cliens__body">
+                            <div class="examples-cliens__text">
+                                <div class="examples-cliens__descr">
+                                    <p>Лучше всего о нас могут рассказать наши клиенты.</p>
+                                    <p>Мы сотрудничаем на постоянной основе с более чем 100 компаниями
+                                        и ещё 40 обращаются
+                                        к нам периодически.</p>
+                                    <p>Вот что они о нас пишут</p>
+                                </div>
+                                <div class="examples-cliens__more more-clients"
+                                    data-da=".examples-cliens__body,750,last">
+                                    <a href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17 9H7V7H17V9Z" fill="#2F89CE" />
+                                            <path d="M7 13H17V11H7V13Z" fill="#2F89CE" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M2 18V2H22V18H16V22H14C11.7909 22 10 20.2091 10 18H2ZM12 16V18C12 19.1046 12.8954 20 14 20V16H20V4H4V16H12Z"
+                                                fill="#2F89CE" />
+                                        </svg>
+
+                                        <p>Читайте все отзывы о сотрудничестве с нами</p>
+
+                                        <svg width="206" height="6" viewBox="0 0 206 6" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M206 3L201 0.113249V5.88675L206 3ZM0 3.5H201.5V2.5H0V3.5Z"
+                                                fill="#2F89CE" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="option-clients__slider swiper">
+                                <div class="option-clients__wrapper swiper-wrapper">
+                                    <div class="option-clients__slide swiper-slide">
+                                        <div class="option-clients__item">
+                                            <img src="img/clients__slider/slide-1.png" alt="">
+                                            <button data-path="gratitude_1" data-animation="fadeIn" data-speed="1000" class="option-clients__zoom modal-btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                                                        stroke="#25282B" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M21 20.9999L16.65 16.6499" stroke="#25282B"
+                                                        stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M11 8V14" stroke="#25282B" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M8 11H14" stroke="#25282B" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="option-clients__slide swiper-slide">
+                                        <div class="option-clients__item">
+                                            <img src="img/clients__slider/slide-2.png" alt="">
+                                            <button data-path="gratitude_2" data-animation="fadeIn" data-speed="1000" class="option-clients__zoom modal-btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                                                        stroke="#25282B" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M21 20.9999L16.65 16.6499" stroke="#25282B"
+                                                        stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M11 8V14" stroke="#25282B" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M8 11H14" stroke="#25282B" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="option-clients__slide swiper-slide">
+                                        <div class="option-clients__item">
+                                            <img src="img/clients__slider/slide-3.png" alt="">
+                                            <button data-path="gratitude_3" data-animation="fadeIn" data-speed="1000" class="option-clients__zoom modal-btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                                                        stroke="#25282B" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M21 20.9999L16.65 16.6499" stroke="#25282B"
+                                                        stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M11 8V14" stroke="#25282B" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M8 11H14" stroke="#25282B" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="option-clients__slide swiper-slide">
+                                        <div class="option-clients__item">
+                                            <img src="img/clients__slider/slide-4.png" alt="">
+                                            <button data-path="gratitude_4" data-animation="fadeIn" data-speed="1000" class="option-clients__zoom modal-btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                                                        stroke="#25282B" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M21 20.9999L16.65 16.6499" stroke="#25282B"
+                                                        stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M11 8V14" stroke="#25282B" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M8 11H14" stroke="#25282B" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main-question about-company__question">
+                <div class="main-question__question question">
+                    <div class="question__container-fluid">
+                        <div class="question__container container">
+                            <div class="question__body">
+                                <div class="question__text">
+                                    <h2 class="question__title title">Есть вопросы?</h2>
+                                    <p class="question__subtitle">
+                                        Оставьте телефон, перезвоним
+                                        в течение 30 минут
+                                    </p>
+                                </div>
+                                <div class="question__images">
+                                    <img src="img/question-bg.png" alt="">
+                                </div>
+                                <form class="question__form form-question">
+                                    <div class="form-question__box">
+                                        <input class="form-question__input" type="tel" placeholder="+7 000 000 00 00">
+                                        <button type="button" class="form-question__button modal-btn btn btn-bold"
+                                            data-path="done" data-animation="fadeIn" data-speed="1000">
+                                            <p>Перезвоните мне</p>
+                                        </button>
+                                    </div>
+                                    <p class="form-question__personal">
+                                        Заявки обрабатываются с 10-00 по 19-00 по будням. Нажимая кнопку "Перезвоните
+                                        мне"
+                                        и передавая свои данные, вы даете согласие на обработку персональных данных
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="footer__container-fluid">
+                    <div class="footer__container container">
+                        <div class="footer__mask"></div>
+                        <div class="footer__row">
+                            <div class="footer__column footer__column-first">
+                                <div class="footer__wrapper">
+                                    <div class="footer__logo">
+                                        <a href="#">
+                                            <img src="img/logo.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="footer__text">
+                                        Высочайшее качество производства
+                                    </div>
+                                </div>
+                                <button class="footer__button btn modal-btn" data-path="connection"
+                                    data-animation="fadeInUp" data-speed="1000">
+                                    <p>Напишите нам</p>
+                                </button>
+                            </div>
+                            <div class="footer__column footer__column-second">
+                                <div class="footer__box footer__wholesale">
+                                    <div class="footer__name">Топливо оптом</div>
+                                    <ul class="footer__menu">
+                                        <li class="footer__list"><a href="#" class="footer__link">Бензин
+                                                автомобильный</a></li>
+                                        <li class="footer__list footer__list-indent"><a href="#"
+                                                class="footer__link">Дизельное топливо</a>
+                                        </li>
+                                        <li class="footer__list"><a href="#" class="footer__link">Мазут</a></li>
+                                        <li class="footer__list"><a href="#" class="footer__link">Битум</a></li>
+                                        <li class="footer__list footer__list-indent"><a href="#"
+                                                class="footer__link">Керосин</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer__box footer__clients">
+                                    <div class="footer__name">Клиентам</div>
+                                    <ul class="footer__menu">
+                                        <li class="footer__list"><a href="#" class="footer__link">Условия
+                                                обслуживания</a></li>
+                                        <li class="footer__list footer__list-indent"><a href="#"
+                                                class="footer__link">Система качества</a>
+                                        </li>
+                                        <li class="footer__list"><a href="#" class="footer__link">География поставок</a>
+                                        </li>
+                                        <li class="footer__list footer__list-indent"><a href="#"
+                                                class="footer__link">Примеры внедрений</a>
+                                        </li>
+                                        <li class="footer__list footer__list-indent"><a href="#"
+                                                class="footer__link">Статьи</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div data-da=".footer__column-second,850,last" class="footer__column footer__column-third">
+                                <div class="footer__box footer__fuel-cards">
+                                    <div class="footer__name">Топливные карты</div>
+                                    <ul class="footer__menu">
+                                        <li class="footer__list"><a href="#" class="footer__link">Для компаний</a></li>
+                                        <li class="footer__list footer__list-indent"><a href="#"
+                                                class="footer__link">Для частных лиц</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="footer__box footer__neft">
+                                    <div class="footer__name">НЕФТЬ</div>
+                                    <ul class="footer__menu">
+                                        <li class="footer__list"><a href="#" class="footer__link">О компании</a></li>
+                                        <li class="footer__list"><a href="#" class="footer__link">Отзывы</a></li>
+                                        <li class="footer__list footer__list-indent"><a href="#"
+                                                class="footer__link">Контакты</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer__column footer__column-foth">
+                                <div class="footer__name">Контакты</div>
+                                <div class="footer__addres">
+                                    <span>121099, город Москва, проезд Шломина,
+                                        дом 6, пом V ком 1 оф 1</span>
+                                    <p><img src="img/metro.svg" alt="">Смоленская</p>
+                                </div>
+                                <div class="footer__contacts">
+                                    <a class="footer__tel" href="tel:+79661677878">+7 (966) 167-78-78</a>
+                                    <a class="footer__mail" href="mailto:info@vsk-oil.com">info@vsk-oil.com </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__container-fluid">
+                    <div class="footer__container container">
+
+                        <div class="footer__wrapper footer__wrapper-shell">
+                            <div class="footer__shell">
+                                <p class="footer__copy">©2021 ООО «ВСК-ОЙЛ»</p>
+                                <a class="footer__politick" href="#">Политика в отношении персональных данных</a>
+                            </div>
+                            <p class="footer__creator">
+                                Создание сайта -
+                                <a href="#">
+                                    Белый кот
+                                    <img src="img/cat.png" alt="">
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </main>
+    </div>
+    <!--
+    data-path="call-back" data-animation="fadeInUp" data-speed="1000"
+    -->
+    <div class="modal">
+        <div class="modal__container call-back" data-target="call-back">
+            <div class="call-back__body modal-body">
+                <div class="modal-body__close">
+                    <button class="modal-close">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 6L6 18" stroke="black" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M6 6L18 18" stroke="black" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="modal-body__header">
+                    <h3 class="modal-body__title title">Обратный звонок</h3>
+                    <div class="modal-body__subtitle call-back__subtitle">Оставьте ваш телефон,
+                        мы&nbsp;перезваниваем в&nbsp;течение 30&nbsp;минут</div>
+                </div>
+                <form action="" class="call-back__form">
+                    <div class="call-back__box">
+                        <input class="call-back__input" type="tel" name="" id="" placeholder="+7 000 000 00 00">
+                        <button class="call-back__button btn">
+                            <p>Перезвоните мне</p>
+                        </button>
+                    </div>
+                </form>
+                <div class="modal-body__descr call-back__descr">
+                    Заявки обрабатываются с&nbsp;10-00 по&nbsp;19-00 по&nbsp;будням. Нажимая кнопку &laquo;Перезвоните
+                    мне&raquo; и&nbsp;передавая свои
+                    данные, вы&nbsp;даете согласие на&nbsp;обработку персональных данных
+                </div>
+            </div>
+        </div>
+        <div class="modal__container connection" data-target="connection">
+            <div class="connection__body modal-body">
+                <div class="modal-body__close">
+                    <button class="modal-close">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 6L6 18" stroke="black" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M6 6L18 18" stroke="black" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="modal-body__header connection__header">
+                    <h3 class="modal-body__title connection__title title">Обратная связь</h3>
+                    <div class="modal-body__subtitle connection__subtitle">
+                        Есть вопросы, пожелания или надо
+                        решить проблему?
+                    </div>
+                </div>
+                <form action="" class="connection__form">
+                    <input class="connection__input connection__input-them" type="text" name="" id=""
+                        placeholder="Тема">
+                    <div class="connection__wrapper">
+                        <input class="connection__input connection__input-name" type="text" name="" id=""
+                            placeholder="Ваше имя *">
+                        <input class="connection__input connection__input-them" type="email" name="" id=""
+                            placeholder="E-mail *">
+                    </div>
+                    <textarea class="connection__area" name="" id="" placeholder="Ваше сообщение"></textarea>
+                    <button class="connection__button btn">
+                        <p>Отправить</p>
+                    </button>
+                </form>
+                <div class="modal-body__descr connection__descr">
+                    Заявки обрабатываются с&nbsp;10-00 по&nbsp;19-00 по&nbsp;будням. Нажимая кнопку &laquo;Перезвоните
+                    мне&raquo; и&nbsp;передавая свои
+                    данные, вы&nbsp;даете согласие на&nbsp;обработку персональных данных
+                </div>
+            </div>
+        </div>
+        <div class="modal__container done" data-target="done">
+            <div class="done__body modal-body">
+                <div class="modal-body__close">
+                    <button class="modal-close">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 6L6 18" stroke="black" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M6 6L18 18" stroke="black" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="done__wrapper">
+                    <div class="modal-body__header done__header">
+                        <h3 class="modal-body__title done__title title">Обратная связь</h3>
+                        <div class="modal-body__subtitle done__subtitle">
+                            Наш сотрудник уже получил вашу завку и начал с ней работать. Сосём скоро он перезвонит вам!
+                        </div>
+                    </div>
+                    <button class="done__button modal-close btn">
+                        <p>Закрыть</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal__container certificate" data-target="gratitude_1">
+            <div class="certificate__body">
+                <div class="modal-body__close certificate-body__close">
+                    <button class="modal-close">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 6L6 18" stroke="black" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M6 6L18 18" stroke="black" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="certificate__images">
+                    <img src="img/clients__slider/slide-1.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="modal__container certificate" data-target="gratitude_2">
+            <div class="certificate__body">
+                <div class="modal-body__close certificate-body__close">
+                    <button class="modal-close">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 6L6 18" stroke="black" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M6 6L18 18" stroke="black" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="certificate__images">
+                    <img src="img/clients__slider/slide-2.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="modal__container certificate" data-target="gratitude_3">
+            <div class="certificate__body">
+                <div class="modal-body__close certificate-body__close">
+                    <button class="modal-close">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 6L6 18" stroke="black" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M6 6L18 18" stroke="black" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="certificate__images">
+                    <img src="img/clients__slider/slide-3.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="modal__container certificate" data-target="gratitude_4">
+            <div class="certificate__body">
+                <div class="modal-body__close certificate-body__close">
+                    <button class="modal-close">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 6L6 18" stroke="black" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M6 6L18 18" stroke="black" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="certificate__images">
+                    <img src="img/clients__slider/slide-4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
