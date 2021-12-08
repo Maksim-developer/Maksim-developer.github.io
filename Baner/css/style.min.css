@@ -521,6 +521,7 @@ h6 {
   }
   .draw-screen__model {
     font-size: 18px;
+    line-height: 23px;
     margin-bottom: 26px;
   }
   .draw-screen__model span {
