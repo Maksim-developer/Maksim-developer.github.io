@@ -129,6 +129,7 @@ h6 {
 
 .baner-draw {
   position: relative;
+  width: 100%;
   font-family: "Open Sans";
   padding: 20px 0px 47px 53px;
 }
@@ -250,6 +251,7 @@ h6 {
   z-index: 3;
   display: block;
   margin-top: -40px;
+  width: 100%;
 }
 
 .baner-draw__descr span {
