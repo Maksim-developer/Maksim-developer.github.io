@@ -1,0 +1,25 @@
+///Сброс/////////////////////////
+@import "reset/null.scss";
+@import "reset/main.scss";
+
+///Элементы/////////////////////////
+@import "elemens/btn.scss";
+@import "elemens/main-link.scss";
+@import "elemens/product-more.scss";
+@import "elemens/main-input.scss";
+
+///Блоки/////////////////////////
+@import "block/header.scss";
+@import "block/burger.scss";
+
+@import "block/grid-product.scss";
+@import "block/product.scss";
+
+@import "block/footer.scss";
+@import "block/swiper.scss";
+@import "block/modal.scss";
+
+///Компоненты/////////////////////////
+@import "component/home/home.scss";
+@import "component/home/our-product.scss";
+

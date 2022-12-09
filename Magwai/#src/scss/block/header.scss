@@ -1,0 +1,246 @@
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding: 28px 0;
+    background-color: $dark;
+    @media (max-width:1366px) {
+        padding: 20px 0;
+    }
+    @media (max-width:1250px) {
+        padding: 0;
+        &.fixed {
+            position: fixed;
+        }
+    }
+
+    // .header__wrapper
+    &__wrapper {
+        display: none;
+        @media (max-width:1250px) {
+            overflow: auto;
+            position: fixed;
+            pointer-events: none;
+            z-index: 9;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100vh;
+            display: block;
+            padding: 120px 40px;
+            background-color: rgba($dark, 1);
+            transition: 0.8s all ease 0s;
+            transform: translateY(-100%);
+            opacity: 0;
+            &::after {
+                content: "";
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 80px;
+                background-color: $dark;
+            }
+            &._active {
+                transform: translateY(0);
+                pointer-events: auto;
+                opacity: 1;
+            }
+        }
+        @media (max-width:750px) {
+            padding: 100px 30px;
+        }
+    }
+
+    // .header__container
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        column-gap: 76px;
+        row-gap: 20px;
+        @media (max-width:1700px) {
+            column-gap: 50px;
+        }
+        @media (max-width:1430px) {
+            column-gap: 30px;
+        }
+        @media (max-width:1250px) {
+            position: relative;
+            z-index: 10;
+            background-color: $dark;
+            padding: 15px 30px;
+        }
+        @media (max-width:750px) {
+            padding: 15px 20px;
+        }
+    }
+
+    // .header__logo
+    &__logo {
+        margin-top: -5px;
+        will-change: transform;
+        max-width: 156px;
+        text-align: center;
+        transition: $transition;
+        @media (max-width:550px) {
+            max-width: 130px;
+        }
+        @media (any-hover: hover) {&:hover {
+            opacity: .7;
+            transform: scale(1.2);
+        }}
+    }
+
+    // .header__nav
+    &__nav {
+        max-width: 973px;
+        margin-right: auto;
+        @media (max-width:1700px) {
+            max-width: 80%;
+            margin: 0;
+        }
+        @media (max-width:750px) {
+            margin-bottom: 50px;
+        }
+        @media (max-width:375px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    // .header__box
+    &__box {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        row-gap: 15px;
+        @media (max-width:1430px) {
+            column-gap: 20px;
+        }
+        @media (max-width:750px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    // .header__phone
+    &__phone {
+        will-change: transform;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+        opacity: .4;
+        @media (max-width:1700px) {
+            padding: 10px 15px;
+        }
+        @media (max-width:1250px) {
+            img {
+                max-width: 30px;
+            }
+        }
+        @media (max-width:750px) {
+            width: 50%;
+            padding: 15px;
+        }
+        @media (max-width:550px) {
+            width: 100%;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0.15em solid $white;
+            transform: skewX(-17deg);
+            transition: inherit;
+        }
+        @media (any-hover: hover) {&:hover {
+            opacity: 1;
+            &::after {
+                transform: skewX(0);
+            }
+        }}
+    }
+
+    // .header__btn
+    &__btn {
+        margin-right: 20px;
+        @media (max-width:1430px) {
+            padding: 20px 40px;
+        }
+        @media (max-width:1366px) {
+            padding: 20px 30px;
+        }
+        @media (max-width:1250px) {
+            padding: 15px 25px;
+        }
+        @media (max-width:750px) {
+            width: 50%;
+            padding: 20px;
+            margin-right: 0;
+        }
+        @media (max-width:550px) {
+            width: 100%;
+        }
+    }
+}
+.none {
+    pointer-events: none;
+}
+.nav {
+    // .nav__list
+    &__list {
+        display: flex;
+        align-items: center;
+        column-gap: 42px;
+        row-gap: 10px;
+        flex-wrap: wrap;
+        @media (max-width:1700px) {
+            column-gap: 30px;
+        }
+        @media (max-width:1430px) {
+            column-gap: 20px;
+        }
+        @media (max-width:1250px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        a {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 150%;
+            text-transform: uppercase;
+            color: $white;
+            @media (max-width:1366px) {
+                font-size: 13px;
+            }
+            @media (max-width:1250px) {
+                display: block;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 150%;
+                text-align: right;
+                color: unset;
+                text-shadow: 1px 0 1px #808080, 
+                0 1px 1px #808080, 
+                -1px 0 1px #808080, 
+                0 -1px 1px #808080;
+            }
+            @media (max-width:750px) {
+                font-size: 20px;
+            }
+            @media (any-hover: hover) {&:hover {
+                color: $yellow;
+            }}
+        }
+    }
+}

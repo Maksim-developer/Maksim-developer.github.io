@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Mulish:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Magwai</title>
+</head>
+
+<body class="body">
+    @@include('_header.html')
+
+    <main class="main">
+
+        <section class="home page">
+            <div class="home__container">
+                <div class="home-swiper swiper">
+                    <div class="home-swiper__wrapper swiper-wrapper">
+                        <div class="home-swiper__slide swiper-slide"
+                            style="background-image: url(img/home/slide-1.jpg)">
+                            <div class="home-swiper__contant">
+                                <h1 class="home-swiper__title" data-swiper-parallax="-500">Полет Илона Маска
+                                    <span>и&nbsp;DOGIE COIN</span>
+                                </h1>
+                                <p class="home-swiper__descr" data-swiper-parallax="-700">
+                                    В&nbsp;прошлый четверг все офигели от&nbsp;полета DOGIE COIN на&nbsp;марс.
+                                </p>
+                                <button class="home-swiper__btn btn modal-btn" data-swiper-parallax="-900"
+                                    data-path="order">
+                                    <span>ОСТАВИТЬ ЗАЯВКУ</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="home-swiper__slide swiper-slide"
+                            style="background-image: url(img/home/slide-2.jpg)">
+                            <div class="home-swiper__contant">
+                                <h2 class="home-swiper__title" data-swiper-parallax="-500">DOGIE COIN <span>УПАЛ</span>
+                                </h2>
+                                <p class="home-swiper__descr" data-swiper-parallax="-700">
+                                    Все в&nbsp;шоке, я&nbsp;потерял все деньги
+                                </p>
+                                <button class="home-swiper__btn btn modal-btn" data-swiper-parallax="-900"
+                                    data-path="order">
+                                    <span>ОСТАВИТЬ ЗАЯВКУ</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="home-swiper__slide swiper-slide"
+                            style="background-image: url(img/home/slide-3.jpg)">
+                            <div class="home-swiper__contant">
+                                <h2 class="home-swiper__title" data-swiper-parallax="500">Эпическое возвращения
+                                    <span>на&nbsp;хаи</span>
+                                </h2>
+                                <p class="home-swiper__descr" data-swiper-parallax="1000">
+                                    Все в&nbsp;шоке, я&nbsp;снова богат
+                                </p>
+                                <button class="home-swiper__btn btn modal-btn" data-swiper-parallax="-600"
+                                    data-path="order">
+                                    <span>ОСТАВИТЬ ЗАЯВКУ</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-swiper__nav">
+                    <button class="home-swiper__item main-link first active">DOgie coin</button>
+                    <button class="home-swiper__item main-link thoo">ПАДЕНИЕ</button>
+                    <button class="home-swiper__item main-link third">ВОЗВРАЩЕНИЕ</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="our-product">
+            <div class="our-product__container container">
+                <h2 class="our-product__title">Карточки</h2>
+                <div class="our-product__grid grid-product"></div>
+                <button class="product-more btn"><span>ЗАГРУЗИТЬ ЕЩЕ</span></button>
+            </div>
+        </section>
+
+        <!--Стандартная разметка
+            <section class="Название page">
+            <div class="Название__container container"></div>
+        </section>
+        -->
+
+    </main>
+
+    <div class="modals">
+        <div class="modal-overlay">
+            <div class="modal modal--1 order" data-target="order">
+                <div class="order__body modal-body">
+                    <div class="modal-body__close modal-close">
+                        <img src="img/svg/close.svg" alt="Закрыть окно">
+                    </div>
+                    <div class="order__image">
+                        <img src="img/home/form-bg.jpg" aria-hidden="true" alt="картинка">
+                    </div>
+                    <form id="form" action="#" class="order__form form">
+                        <h2 class="form__title">Оставьте заявку</h2>
+                        <p class="form__descr">
+                            Оставьте заявку и&nbsp;наш менеджер свяжется с&nbsp;вами
+                            в&nbsp;течение 10 &minus;15 минут
+                        </p>
+                        <div class="form__contant">
+                            <div class="form__box main-input">
+                                <input class="main-input__item input-name" name="Имя" placeholder="Ваше имя*"
+                                    type="text" data-validate-field="name">
+                                <span class="main-input__label">Ваше имя*</span>
+                            </div>
+                            <div class="form__box main-input">
+                                <input class="main-input__item input-mail" name="Email" placeholder="E-mail*"
+                                    type="email" data-validate-field="email">
+                                <span class="main-input__label">E-mail*</span>
+                            </div>
+                            <div class="form__box main-input">
+                                <input class="main-input__item input-tel" placeholder="Телефон" name="Телефон"
+                                    type="tel" data-validate-field="tel">
+                                <span class="main-input__label">Телефон</span>
+                            </div>
+                            <div class="form__box main-input">
+                                <textarea class="main-input__area main-input__item"
+                                    placeholder="Ваш вопрос*"></textarea>
+                                <span class="main-input__label">Ваш вопрос*</span>
+                            </div>
+                            <div class="form__bottom">
+                                <button type="submit" class="form__btn btn"><span>ОСТАВИТЬ ЗАЯВКУ</span></button>
+                                <p class="form__politick">
+                                    Нажимая на&nbsp;кнопку &laquo;Оставить заявку&raquo; вы&nbsp;соглашаетесь
+                                    с&nbsp;<a class="form__link main-link" href="#">&laquo;Пользовательским
+                                        соглашением&raquo;</a>
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

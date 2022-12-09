@@ -1,0 +1,28 @@
+.grid-product {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    @media (max-width:1780px) {
+        gap: 20px;
+    }
+    @media (max-width:1430px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    @media (max-width:1250px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width:950px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    @media (max-width:750px) {
+        gap: 15px;
+    }
+    @media (max-width:550px) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+    // .grid-product__item
+    &__item {
+    }
+}

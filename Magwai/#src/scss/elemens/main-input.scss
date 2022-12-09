@@ -1,0 +1,101 @@
+.main-input {
+    position: relative;
+
+    // .main-input__item
+    &__item {
+        will-change: transform;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 72px;
+        padding: 5px 35px;
+        font-weight: 700;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: $white;
+        line-height: 100%;
+        border: 1px solid #2B2B2B;
+        background-color: transparent;
+        box-shadow: 0px 21px 35px 25px rgba($white, 0);
+        transition: 0.3s ease 0s;
+        &:focus {
+            padding-top: 20px;
+            border: 1px solid $white;
+            box-shadow: 0px 15px 15px -18px rgba($white, 0.7);
+            ~ .main-input__label {
+                transform: translateY(14px) scale(1);
+                opacity: .5;
+            }
+        }
+        &::placeholder {
+            color: inherit;
+            font-size: inherit;
+            line-height: inherit;
+            font-weight: inherit;
+        }
+        &.just-validate-error-field {
+            box-shadow: 0px 15px 15px -15px rgba(red, 0.4);
+            border: 1px solid rgba(red, 0.5);
+        }
+        @media (max-width:1430px) {
+            min-height: 60px;
+            font-size: 13px;
+            padding: 5px 20px;
+        }
+        @media (max-width:550px) {
+            font-weight: 600;
+            font-size: 16px;
+            min-height: 65px;
+        }
+    }
+
+    // .main-input__label
+    &__label {
+        will-change: transform, font-size;
+        position: absolute;
+        top: 0;
+        left: 35px;
+        font-weight: 700;
+        line-height: 100%;
+        transform: translateY(14px) scale(0);
+        font-size: 11px;
+        opacity: 0;
+        text-transform: uppercase;
+        color: $white;
+        transition: 0.3s all linear 0s;
+        @media (max-width:1430px) {
+            font-size: 10px;
+            left: 20px;
+        }
+    }
+
+    &__area {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        min-height: 150px;
+        @media (max-width:1430px) {
+            padding-top: 20px;
+            min-height: 130px;
+        }
+        @media (max-width:1366px) {
+            min-height: 110px;
+        }
+        @media (max-width:1250px) {
+            min-height: 90px;
+        }
+        @media (max-width:550px) {
+            min-height: 80px;
+        }
+        &:focus {
+            padding-top: 35px;
+        }
+    }
+
+    .just-validate-error-label {
+        margin-top: 10px;
+        font-weight: 700;
+        font-size: 14px;
+        color: $white;
+    }
+}

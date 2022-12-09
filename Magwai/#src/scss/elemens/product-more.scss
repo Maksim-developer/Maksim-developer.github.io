@@ -1,0 +1,7 @@
+.product-more {
+    display: block;
+    margin: 0 auto;
+    @media (max-width:550px) {
+        width: 100%;
+    }
+}
