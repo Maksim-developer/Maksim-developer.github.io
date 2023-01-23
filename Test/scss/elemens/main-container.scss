@@ -1,0 +1,15 @@
+.main-conatainer {
+    padding-left: calc((100% - 1310px) / 2);
+    @media (max-width:1430px) {
+        padding-left: 65px;
+    }
+    @media (max-width:1366px) {
+        padding-left: 40px;
+    }
+    @media (max-width:1250px) {
+        padding-left: 30px;
+    }
+    @media (max-width:1050px) {
+        padding-left: 15px;
+    }
+}

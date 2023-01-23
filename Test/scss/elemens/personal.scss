@@ -1,0 +1,102 @@
+.personal {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    @media (max-width:950px) {
+        gap: 10px;
+    }
+
+    // .personal__item
+    &__item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: transparent;
+        cursor: pointer;
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: #74716D;
+            border-radius: inherit;
+            transform: scale(0);
+            transition: $transition;
+            @media (max-width:950px) {
+                background: #D7D0C0;
+            }
+        }
+        @media (any-hover: hover) {&:hover {
+            &::after {
+                transform: scale(1);
+            }
+        }}
+        &.--active {
+            &::after {
+                transform: scale(1);
+            }
+            .personal__qunatity {
+                transform: scale(1);
+            }
+            .personal__input {
+                max-width: 500px;
+                opacity: 1;
+            }
+        }
+    }
+
+    // .personal__icon
+    &__icon {
+        z-index: 1;
+        font-size: 24px;
+        color: $white;
+        @media (max-width:950px) {
+            color: $dark;
+            font-size: 28px;
+        }
+    }
+
+    // .personal__search
+    &__search {
+        
+    }
+
+    // .personal__cart
+    &__cart {
+        font-size: 26px;
+    }
+
+    //personal__qunatity
+    &__qunatity {
+        will-change: transform;
+        pointer-events: none;
+        position: absolute;
+        z-index: 2;
+        bottom: 5px;
+        left: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        width: 17px;
+        height: 17px;
+        text-align: center;
+        color: $white;
+        font-size: 12px;
+        font-weight: 500;
+        background-color: #A98F70;
+        transform: scale(0);
+        transition: 0.3s transform ease 0s;
+        @media (max-width:950px) {
+            color: $dark;
+        }
+    }
+
+    // .personal__profile
+    &__profile {
+    }
+}

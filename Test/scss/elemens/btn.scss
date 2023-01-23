@@ -1,0 +1,58 @@
+.btn {
+    will-change: transform;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    padding: 18px 30px;
+    color: $white;
+    background-color: #B79163;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 100%;
+    text-align: center;
+    transition: 0.5s all cubic-bezier(0.23, 1, 0.320, 1);
+    &::before {
+        content: "";
+        z-index: 1;
+        position: absolute;
+        inset: 0;
+        border: 1px solid #B79163;
+        opacity: 0;
+        transition: inherit;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 100%;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        background: transparent;
+        transition: $transition;
+    }
+    &:focus {
+        color: $main-color;
+        &::before {
+            opacity: 1;
+        }
+        &::after {
+            width: 100%;
+            opacity: 1;
+        }
+    }
+    @media (any-hover: hover) {&:hover {
+        color: $main-color;
+        &::before {
+            opacity: 1;
+        }
+        &::after {
+            width: 100%;
+            opacity: 1;
+        }
+    }}
+    span {
+        position: relative;
+        z-index: 2;
+    }
+}

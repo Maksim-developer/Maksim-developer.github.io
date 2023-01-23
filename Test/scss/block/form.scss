@@ -1,0 +1,83 @@
+.form {
+    position: relative;
+    display: grid;
+    gap: 25px;
+
+    &__contant {
+        display: grid;
+        gap: 25px;
+    }
+
+    &__descr {
+        margin-bottom: 20px;
+        font-size: 16px;
+        @media (max-width:950px) {
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+        @media (max-width:750px) {
+            max-width: 400px;
+            margin-bottom: 10px;
+        }
+        @media (max-width:550px) {
+            margin-bottom: 0;
+            font-size: 14px;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    &__politick{
+        @media (max-width:950px) {
+            font-size: 13px;
+        }
+        a {
+            color: $main-color;
+            
+        }
+    }
+
+    // .form__item
+    &__item {
+        position: relative;
+    }
+
+    // .form__input
+    &__input {
+        padding-top: 15px;
+        &:focus {
+            &::placeholder {
+                top: 0;
+                font-size: 12px;
+                color: #979086;
+            }
+        }
+        &::placeholder {
+            position: absolute;
+            top: 20px;
+            transition: 0.3s all 0s;
+        }
+    }
+
+    .just-validate-error-label {
+        position: absolute;
+        transform: translateY(100%);
+        font-size: 14px;
+        left: 10px;
+        bottom: -7px;
+        color: $white;
+    }
+
+    // .form__btn
+    &__btn {
+        width: 100%;
+        &::after {
+            background-color: #E7E3DA;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.main-wrapper {
+    @media (max-width:550px) {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        &::-webkit-scrollbar {
+            height: 12px;  
+            border-radius: 6px; 
+        }
+        &::-webkit-scrollbar-track {
+            background: rgba(#EEF0F1, 0.5);
+            border-radius: 6px;  
+        }
+        &::-webkit-scrollbar-thumb {
+            background: #0057FF;
+            border: 3.5px solid rgba(#EEF0F1, 1);
+            border-radius: 6px;
+        }
+    }
+}

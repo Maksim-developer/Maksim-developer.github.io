@@ -1,0 +1,21 @@
+.input {
+    width: 100%;
+    padding: 15px 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    box-shadow: none;
+    border-bottom: 1px solid;
+    border-color: #B0A99F;
+    background-color: transparent;
+    transition: $transition;
+    &:focus {
+        border-color: $main-color;
+    }
+    &::placeholder {
+        color: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        font-weight: inherit;
+    }
+}

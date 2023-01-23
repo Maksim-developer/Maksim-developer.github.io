@@ -1,0 +1,27 @@
+.tabs {
+
+    // .tabs__nav
+    &__nav {
+    }
+
+    // .tabs__btn
+    &__btn {
+
+        // .tabs__btn_active
+        &_active {
+        }
+    }
+
+    // .tabs__content
+    &__content {
+    }
+
+    // .tabs__pane
+    &__pane {
+        display: none;
+        // .tabs__pane_show
+        &_show {
+            display: block;
+        }
+    }
+}

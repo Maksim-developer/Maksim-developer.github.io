@@ -1,0 +1,120 @@
+.nav-drop {
+    position: relative;
+    padding: 8px 0;
+    &.--active {
+        @media (max-width:1300px) {
+            i {
+                color: $main-color;
+            }
+            .nav-drop__wrapper {
+                pointer-events: auto;
+                transform: translateY(100%);
+                opacity: 1;
+            }
+            .nav-drop__button {
+                color: $main-color;
+                pointer-events: auto;
+            }
+        }
+        @media (max-width:950px) {
+            i {
+                color: $dark;
+            }
+            .nav-drop__button {
+                pointer-events: auto;
+                color: $dark;
+            }
+            .nav-drop__wrapper {
+                transform: translateY(0);
+            }
+        }
+    }
+    @media (max-width:950px) {
+        padding: 0;
+    }
+    @media (any-hover: hover) {&:hover {
+        i {
+            color: $main-color;
+        }
+        .nav-drop__wrapper {
+            pointer-events: auto;
+            transform: translateY(100%);
+            opacity: 1;
+        }
+    }}
+
+    // .nav-drop__button
+    &__button {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        i {
+            font-size: 18px;
+            color: $white;
+            transition: inherit;
+            @media (max-width:950px) {
+                font-size: 22px;
+                color: $dark;
+            }
+        }
+        @media (max-width:1300px) {
+            pointer-events: none;
+        }
+        &::after {
+            display: none;
+        }
+    }
+
+    // .nav-drop__wrapper
+    &__wrapper {
+        will-change: transform;
+        position: absolute;
+        min-width: 160px;
+        bottom: 0;
+        pointer-events: none;
+        transform: translateY(110%);
+        opacity: 0;
+        background: #fff;
+        transition: $transition;
+        @media (max-width:950px) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
+            margin-top: 10px;
+            position: static;
+            pointer-events: auto;
+            transform: translateY(0);
+            opacity: 1;
+            background: transparent;
+        }
+    }
+
+    // .nav-drop__link
+    &__link {
+        display: block;
+        padding: 5px 10px;
+        font-size: 16px;
+        line-height: 100%;
+        text-align: left;
+        background-color: #E7E3DA;
+        color: $dark;
+        @media (max-width:1050px) {
+            font-size: 15px;
+        }
+        @media (max-width:950px) {
+            padding: 0;
+            font-size: 14px;
+            color: #8A847B
+        }
+        &::before {
+            display: none;
+        }
+        &::after {
+            background: #CCC3AF;
+        }
+        @media (any-hover: hover) {&:hover {
+            color: $dark;
+        }}
+    }
+}

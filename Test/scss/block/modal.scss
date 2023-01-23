@@ -1,0 +1,138 @@
+.modal-overlay {
+	position: fixed;
+    overflow: auto;
+    z-index: 99999;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba( #000000, 0.7);
+    cursor: pointer;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: center;
+	opacity: 0;
+	visibility: hidden;
+    transform: scale(0);
+	transition: all 0.5s ease-in-out 0s;
+}
+
+.modal-overlay::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.modal-hide {
+    overflow: hidden;
+}
+
+.modal {
+    position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    vertical-align: middle;
+    text-align: left;
+    margin: 50px auto;
+	display: none;
+}
+
+.modal-body {
+    position: relative;
+    background: $white;
+    color: $white;
+    transition-delay: 1s;
+    transition: 0.5s all ease-in-out 0s;
+}
+
+.modal-overlay--visible {
+	opacity: 1;
+	visibility: visible;
+    transform: scale(1);
+}
+
+.modal-hide {
+    overflow: hidden;
+}
+
+.modal--visible {
+	display: inline-block;
+}
+
+.modal-body__close {
+    will-change: transform;
+    position: absolute;
+    z-index: 5;
+    cursor: pointer;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width:24px;
+    height: 24px;
+    transition: 0.5s all ease-in-out 0s;
+    @media (any-hover: hover) {
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+    @media (max-width: 550px) {
+        width: 40px;
+        height: 40px;
+        top: 5px;
+        right: 5px;
+    }
+}
+
+
+.order {
+
+	// .order__body
+	&__body {
+        padding: 40px;
+        @media (max-width:1250px) {
+            padding: 30px;
+        }
+        @media (max-width:950px) {
+            padding: 30px 20px;
+        }
+        @media (max-width:750px) {
+            padding: 25px 15px;
+        }
+	}
+
+	// .order__form
+	&__form {
+        @media (max-width:950px) {
+            max-width: 740px;
+        }
+        @media (max-width:750px) {
+            max-width: 450px;
+        }
+        @media (max-width:550px) {
+            max-width: 275px;
+        }
+	}
+
+    .form {
+        gap: 10px;
+        &__btn {
+            &:focus {
+                color: $white;
+            }
+            @media (any-hover: hover) {&:hover {
+                color: $white;
+            }}
+            &::before {
+                display: none;
+            }
+            &::after {
+                background-color: #74716d;
+            }
+        }
+    }
+}

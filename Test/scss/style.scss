@@ -1,0 +1,25 @@
+///Сброс/////////////////////////
+@import "reset/null.scss";
+@import "reset/main.scss";
+
+@import "fonts.scss";
+
+///Элементы/////////////////////////
+@import "elemens/btn.scss";
+@import "elemens/personal.scss";
+@import "elemens/main-link.scss";
+@import "elemens/input.scss";
+
+///Блоки/////////////////////////
+@import "block/header.scss";
+@import "block/nav.scss";
+@import "block/nav-drop.scss";
+@import "block/burger.scss";
+@import "block/form.scss";
+@import "block/modal.scss";
+
+
+///Компоненты/////////////////////////
+@import "component/home.scss";
+@import "component/suggest.scss";
+
