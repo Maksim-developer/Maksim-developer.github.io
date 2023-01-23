@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <script defer src="js/gsap.min.js"></script>
+    <script defer src="js/ScrollTrigger.min.js"></script>
+    <script defer src="js/validate.js"></script>
+    <script defer src="js/script.js"></script>
+
+    <title>Сайт</title>
+</head>
+
+<body class="body">
+
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            @@include('_header.html')
+            <main>
+                <section class="home">
+                    <img class="home__bg" aria-hidden="true" src="img/home/bg.jpg" alt="Главное изображение">
+                    <div class="home__container container">
+                        <h1 hidden class="visuality-hideen">Заголовок</h1>
+                    </div>
+                </section>
+
+                <section class="suggest">
+                    <div class="suggest__mask mask">
+                        <div class="mask__item" data-scrub="1">
+                            <div class="mask__contant"></div>
+                        </div>
+                        <div class="mask__item" data-scrub="2">
+                            <div class="mask__contant"></div>
+                        </div>
+                        <div class="mask__item" data-scrub="5">
+                            <div class="mask__contant"></div>
+                        </div>
+                    </div>
+                    <div class="suggest__container container">
+                        <div class="suggest__title">
+                            <h2>Рекомендуем попробовать</h2>
+                        </div>
+                        <div class="suggest__icons">
+                            <i class="mak-Profile"></i>
+                            <i class="mak-Search"></i>
+                            <i class="mak-Cart"></i>
+                            <i class="mak-Chevron-down"></i>
+                            <i class="mak-Arrow-right"></i>
+                        </div>
+                        <form action="#" class="suggest__form form form-suggest" id="form-suggest" method="POST"
+                            enctype="multipart/form-data">
+                            <div class="form__item">
+                                <input type="text" placeholder="Ваше имя * " class="form__input input input-name">
+                            </div>
+                            <div class="form__item">
+                                <input type="tel" placeholder="Номер телефона * "
+                                    class="form__input input tel input-tel">
+                            </div>
+                            <div class="form__item">
+                                <input type="text" placeholder="Комментарий" class="form__input input">
+                            </div>
+                            <div class="form__item">
+                                <button type="submit" class="form__btn btn modal-clo"><span>Отправить</span></button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </main>
+            @@include('_footer.html')
+        </div>
+    </div>
+
+    <div class="modals">
+        <div class="modal-overlay">
+            <div class="modal modal--1 order" data-target="order">
+                <div class="order__body modal-body">
+                    <div class="modal-body__close modal-close">
+                        <img src="img/svg/close.svg" alt="Закрыть окно">
+                    </div>
+                    <form id="form-modal" action="#" method="POST" enctype="multipart/form-data"
+                        class="order__form form form-modal">
+                        <h2 class="form__title">Оставьте заявку</h2>
+                        <p class="form__descr">
+                            Оставьте заявку и&nbsp;наш менеджер свяжется с&nbsp;вами
+                            в&nbsp;течение 10 &minus;15 минут
+                        </p>
+                        <div class="form__contant">
+                            <div class="form__item main-input">
+                                <input class="form__input input modal-name" name="Имя" placeholder="Ваше имя*"
+                                    type="text">
+                            </div>
+                            <div class="form__item main-input">
+                                <input class="form__input input modal-mail" name="Email" placeholder="E-mail*"
+                                    type="email">
+                            </div>
+                            <div class="form__item main-input">
+                                <input class="form__input input modal-tel tel" placeholder="Телефон" name="Телефон"
+                                    type="tel">
+                            </div>
+                            <div class="form__bottom">
+                                <button type="submit" class="form__btn btn"><span>ОСТАВИТЬ
+                                        ЗАЯВКУ</span></button>
+                                <p class="form__politick">
+                                    Нажимая на&nbsp;кнопку &laquo;Оставить заявку&raquo; вы&nbsp;соглашаетесь
+                                    с&nbsp;<a class="form__link main-link" href="#">&laquo;Пользовательским
+                                        соглашением&raquo;</a>
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
